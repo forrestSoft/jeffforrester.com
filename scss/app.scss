@@ -101,11 +101,20 @@ $secondary-font: 'Droid Serif', sans-serif;
 		padding-left: 20px;
 	}
 
+	.imageContainer, .videoContainer{
+		
+	}
+
 	.imageContainer{
 		/*height: 300px;*/
-		border: 1px solid #ccc;
+		/*border: 1px solid #ccc;*/
 		padding: 0;
 		margin-bottom: 20px;
+
+		img{
+			width:98%;
+			border: 1px solid #ccc;
+		}
 	}
 
 	.close-reveal-modal, 
@@ -115,7 +124,7 @@ $secondary-font: 'Droid Serif', sans-serif;
 
 	.videoContainer{
 		margin-bottom: 0;
-		border: 1px solid #ccc;
+		/*border: 1px solid #ccc;*/
 		padding: 0;
 	}
 
