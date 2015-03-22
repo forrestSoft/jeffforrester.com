@@ -46,7 +46,7 @@ $(function(){
 				    }]
 				});
 				$('#ERModal .slick div.slide').removeClass("hide");
-				$('#ERModal video').css({width: '100%', border: '1px solid #ccc');
+				$('#ERModal video').css({width: '100%', border: '1px solid #ccc'});
 				$('#ERModal .slick').slick("setPosition", 0);
 				slicked = true;
 				
