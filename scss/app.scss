@@ -132,6 +132,17 @@ $secondary-font: 'Droid Serif', sans-serif;
 		border: 1px solid #ccc;
 	}
 
+	.masthead{
+		padding: 0;
+		@media #{$small-up} { 
+			padding: 0;
+		}
+
+		@media #{$large-up} { 
+			/*padding: 0;*/
+		}
+	}
+
 }
 
 html, body {
