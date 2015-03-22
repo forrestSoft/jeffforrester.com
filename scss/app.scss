@@ -120,7 +120,7 @@ html, body {
 body{
 
 	@media #{$small-up} { 
-		padding-top:0;
+		padding-top: 1rem;
 	}
 
 	@media #{$medium-up} { 
