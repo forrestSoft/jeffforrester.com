@@ -95,6 +95,18 @@ $secondary-font: 'Open Sans', sans-serif;
 	video{
 		width: 557px;
 		/*height: 300px;*/
+
+	@media #{$small-up} { 
+		width: 88vw;
+	}
+
+	@media #{$medium-up} { 
+		width: 521px;
+	}
+
+	@media #{$large-up} { 
+		width: 557px;
+	}
 	}
 
 }

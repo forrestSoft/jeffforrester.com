@@ -10,7 +10,7 @@ $(function(){
 		// console.log(modal);
 		switch($(modal.context).prop('id')){
 			case 'ERModal':
-				$('#ERModal .slick div.slide').addClass('hide');
+				// $('#ERModal .slick div.slide').addClass('hide');
 			break;
 		}
 	});
@@ -28,10 +28,25 @@ $(function(){
 					$('#ERModal .slick').slick('unslick');
 				}
 				$('#ERModal .slick').slick({
-					// mobileFirst: true
-					adaptiveHeight: true
+					// mobileFirst: true,
+					adaptiveHeight: true,
+					respondTo: 'window',
+					variableWidth: false,
+					responsive: [{
+				      breakpoint: 600,
+				      settings: {
+				        arrows: true
+				      }
+				    },
+				    {
+				      breakpoint: 600,
+				      settings: {
+				        arrows: false
+				      }
+				    }]
 				});
 				$('#ERModal .slick div.slide').removeClass("hide");
+				$('#ERModal .slick').slick("setPosition", 0);
 				slicked = true;
 				
 			break;
