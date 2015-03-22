@@ -9,10 +9,11 @@
 		<link rel="stylesheet" href="stylesheets/app.css" />
 		<link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
 		<link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
-		<script src="bower_components/modernizr/modernizr.js"></script>
+		<script src="js/modernizr.js"></script>
 
-		<script src="bower_components/jquery/dist/jquery.min.js"></script>
-		<script src="bower_components/foundation/js/foundation.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/foundation.min.js"></script>
+		<script src="js/fastclick.js"></script>
 		<script type="text/javascript" src="js/slick/slick.min.js"></script>
 
 		<script src="js/app.js"></script>
@@ -28,25 +29,25 @@
 			</div>
 			<div class="small-10 small-centered medium-8 columns">
 				<div class="content">
-				<!-- <p>Thanks for stopping by.</p> -->
-				<p>Some of my recent work:</p>
-				<ul>
-				<li class="modalTrigger">
-					<!-- <a href="http://cpg.org" target="_blank" >Church Pension Group</a> -->
-					<a data-reveal-id="cpgModal" >Church Pension Group</a>
-					<em>(Current employer)</em>
-				</li>
-				<li>
-					<!-- <a href="/assets/EmployeeRosterFinal.mov" target="_blank">Employee Roster Demo video</a> -->
-					<a data-reveal-id="ERModal" >Employee Roster</a>
-					<!-- <br/><em>(rich internet application residing behind a log-in wall)</em> -->
-				</li>
-				<li>
-					<a href="/game5/index.html?showTutorial=true" target="_blank">Untitled Game</a>
-					<em>(beta)</em>
-				</li>
-				</ul>
-			</div>
+					
+					
+						<a data-reveal-id="skillsModal" >I have skills <span class="icon">↣</span></a>
+					
+					<p>Some of my recent work:</p>
+					<ul>
+					<li class="modalTrigger">
+						<a data-reveal-id="cpgModal" >Church Pension Group <span class="icon">↣</span></a>
+						<em>(Current employer)</em>
+					</li>
+					<li>
+						<a data-reveal-id="ERModal" >Employee Roster <span class="icon">↣</span></a>
+					</li>
+					<li>
+						<a href="/game5/index.html?showTutorial=true" target="_blank">Untitled Game <span class="icon">↣</span></a>
+						<em>(beta)</em>
+					</li>
+					</ul>
+				</div>
 			<div id="footer">
 				<ul class="icon-bullets">
 				<li class="email">
@@ -89,7 +90,7 @@
 			</div>
 
 		
-		</div>
+		
 
 		<div id="cpgModal" class="reveal-modal modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
 			<div class="container">
@@ -111,25 +112,40 @@
 						</ul>
 					</div>
 				</div>
-<!-- 				<div class="row sl">
-					<div class="small-12 columns">
-						<h2>Church Pension Group</h2>
+			</div>
+		</div>
+
+		<div id="skillsModal" class="reveal-modal modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+			<div class="small-12 columns">
+						<h2>skills</h2>
 					
 						<a class="close-reveal-modal" aria-label="Close">&#215;</a>
 					</div>
-					<div class="small-4 columns">
-						<p>I am the sole UI Engineer for the Church Pension Group, responsible for:</p>
-						<ul>
-							<li>UX design and UI development of rich internet applications</li>
-							<li>Technical direction of all front end technologies</li>
-							<li>Maintenance and enhancement of front end code base for all web properties</li>
-						</ul>
-					</div>
-					<div class="small-8 columns imageContainer">
-						<img src="images/banners/cpg.png">
-					</div>
+			<div class="row">
+				<div class="small-4 columns">
+					<h3>Code</h3>
+					<ul>
+						<li>Javascript - with and without a framework</li>
+						<li>backbone/marionette, angular, meteor</li>
+						<li>All flavors of CSS</li>
+					</ul>
 				</div>
-			</div> -->
+				<div class="small-4 columns">
+					<h3>Engineering</h3>
+					<ul>
+						<li>User experience design</li>
+						<li>User interface application design</li>
+						<li>Front end ninja ✶</li>
+					</ul>
+				</div>
+				<div class="small-4 columns">
+					<h3>People</h3>
+					<ul>
+						<li>Technical leadership</li>
+					</ul>
+				</div>
+				
+			</div>
 		</div>
 
 		<div id="ERModal" class="reveal-modal modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
@@ -159,9 +175,11 @@
 						</div>
 					</div>
 					<div>
-						<div class="row slide">
+						<div class="row slide hide">
 							<div class="small-12 medium-8 medium-push-4 columns imageContainer">
-								<img src="images/banners/cpg.png">
+								<video controls>
+									<source src="EmployeeRosterFinal.mp4" type="video/mp4">
+								</video>
 							</div>
 							<div class="small-12 medium-4 medium-pull-8 columns">
 								<p>The Employee Roster application is the web self service portal used to capture demographic, compensation, and pension enrollment data for employees of Episcopal churches and institutions. It also serves as the interface to capture physical demographic information for all kinds of institutions</p>

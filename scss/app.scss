@@ -43,17 +43,26 @@
 $primary-color: lightsteelblue;
 $secondary-color: rgb(166, 168, 179);
 
+$primary-font: 'Open Sans', sans-serif;
 $secondary-font: 'Open Sans', sans-serif;
 
 .modal{
 	padding: 1.2rem;
 	font-color: #ccc;
+	font-family: $primary-font;
+
 	h2{
 		font-size: 1.6rem;
 		font-family: $secondary-font;
 		font-weight: bold;
 		border-bottom: 1px solid #ccc;
 		margin-bottom: 20px;
+	}
+
+	h3{
+		font-size: 1.2rem;
+		font-family: $secondary-font;
+		font-style: italic;
 	}
 
 	ul, p{
@@ -95,23 +104,31 @@ html, body {
 		align-items: center;
 		display: flex;
 	}
+}
+
+body{
 
 	@media #{$small-up} { 
-		margin-top:0;
+		padding-top:0;
 	}
 
 	@media #{$medium-up} { 
-		margin-top:3rem;
+		padding-top:3rem;
 	}
 
 	@media #{$large-up} { 
-		margin-top:6rem;
+		padding-top:6rem;
 	}
 }
 
 
 strong {
 	font-weight: 700;
+}
+
+p .icon{
+	font-size: 1.25rem;
+	color: #296693;
 }
 
 a {
