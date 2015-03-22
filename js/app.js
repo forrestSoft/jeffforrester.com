@@ -26,7 +26,9 @@ $(function(){
 					// $('#ERModal .slick div.slide').addClass('hide');
 					$('#ERModal .slick').slick('unslick');
 				}
-				$('#ERModal .slick').slick();
+				$('#ERModal .slick').slick({
+					// mobileFirst: true
+				});
 				$('#ERModal .slick div.slide').removeClass("hide");
 				slicked = true;
 				
