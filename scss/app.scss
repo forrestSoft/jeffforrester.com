@@ -38,3 +38,170 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+
+$primary-color: lightsteelblue;
+$secondary-color: rgb(166, 168, 179);
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height:100%;
+
+	font-family: 'Droid Serif', serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.5;
+
+	.center{
+		justify-contents: center;
+		align-items: center;
+		display: flex;
+	}
+}
+
+
+strong {
+	font-weight: 700;
+}
+
+a {
+	color: steelblue;
+}
+
+a:visited {
+	color: $primary-color;
+}
+
+.no-break {
+	white-space: nowrap;
+}
+
+ul {
+	list-style-type: circle;
+	padding-left: 40px;
+	margin-left: 0;
+}
+
+ul li {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+ul.icon-bullets {
+	list-style-type: none;
+}
+
+ul.icon-bullets li {
+	position: relative;
+}
+
+ul.icon-bullets li:before {
+	content: ' ';
+	display: block;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: .2em;
+	left: -21px;
+}
+
+#wrapper {
+	margin: 0 auto;
+	width: 33%;
+}
+
+.header {
+	margin: 0 0 15px;
+	padding: 0 0 10px;
+	border-bottom: 1px dotted $primary-color;
+
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 2em;
+
+	small {
+		font-weight: 300;
+		font-size: 1em;
+	}
+}
+
+.content em {
+	color: $secondary-color;
+}
+
+
+#footer {
+	margin-top: 15px;
+	padding-top: 5px;
+	border-top: 1px dotted $primary-color;
+	/*font-size: .8em*/
+}
+
+#footer .email:before {
+	background-image: url('../images/icons/email.png');
+}
+
+#footer .resume:before {
+	background-image: url('../images/icons/page_white_acrobat.png');
+}
+
+#footer .portfolio:before {
+	background-image: url('../images/icons/brick.png');
+}
+
+$left-width: 300px;
+
+.info{
+	& > div{
+		padding: 5px 20px 10px 20px;
+	}
+	.info-box {
+		float: left;
+		width: $left-width;
+		padding: 0 20px;
+
+		p{
+			font-size: .9rem;
+			margin-top: 16px;
+			line-height: 1.8;
+		}
+
+		ul{
+			padding-left: 16px;
+
+			li{
+				font-size: .9rem;
+			}
+		}
+
+		h3{
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		h3::first-line{
+			line-height: .8;
+		}
+
+		h5{
+			font-size: 1.2rem;
+			font-style: italic;
+			font-family: 'Open Sans', sans-serif;
+		}
+	}
+
+	.showcase{
+		margin-left: $left-width;
+
+		video{
+			width: 1050px;
+			weight: 1044px;
+		}
+	}
+
+	.header{
+		width: 100%;
+	}
+}
