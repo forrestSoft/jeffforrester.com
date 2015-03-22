@@ -43,6 +43,42 @@
 $primary-color: lightsteelblue;
 $secondary-color: rgb(166, 168, 179);
 
+$secondary-font: 'Open Sans', sans-serif;
+
+.modal{
+	padding: 1.2rem;
+	font-color: #ccc;
+	h2{
+		font-size: 1.6rem;
+		font-family: $secondary-font;
+		font-weight: bold;
+		border-bottom: 1px solid #ccc;
+		margin-bottom: 20px;
+	}
+
+	ul, p{
+		font-size: .9rem;
+	}
+
+	ul{
+		/*list-style-position: inside;*/
+		padding-left: 20px;
+	}
+
+	.imageContainer{
+		/*height: 300px;*/
+		border: 1px solid #ccc;
+		padding: 0;
+		margin-bottom: 20px;
+	}
+
+	.close-reveal-modal, 
+	dialog .close-reveal-modal{
+		top: 0em;
+	}
+
+}
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -58,6 +94,18 @@ html, body {
 		justify-contents: center;
 		align-items: center;
 		display: flex;
+	}
+
+	@media #{$small-up} { 
+		margin-top:0;
+	}
+
+	@media #{$medium-up} { 
+		margin-top:3rem;
+	}
+
+	@media #{$large-up} { 
+		margin-top:6rem;
 	}
 }
 
@@ -109,7 +157,7 @@ ul.icon-bullets li:before {
 
 #wrapper {
 	margin: 0 auto;
-	width: 33%;
+	width: 36%;
 }
 
 .header {
@@ -122,9 +170,27 @@ ul.icon-bullets li:before {
 	font-weight: 900;
 	font-size: 2em;
 
+	@media #{$small-up} { 
+		font-size: 7vw;
+	}
+
+	@media #{$medium-up} { 
+		font-size: 4vw;
+	}
+
+	@media #{$large-up} { 
+		font-size: 2vw;
+	}
+
+	@media #{$xxlarge-up} { 
+		font-size: 1.5vw;
+	}
+
 	small {
 		font-weight: 300;
-		font-size: 1em;
+		/*font-size: 1em;*/
+
+
 	}
 }
 
