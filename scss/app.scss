@@ -86,9 +86,15 @@ $secondary-font: 'Open Sans', sans-serif;
 		top: 0em;
 	}
 
+	.videoContainer{
+		margin-bottom: 0;
+		border: 1px solid #ccc;
+		padding: 0;
+	}
+
 	video{
-		width: 300px;
-		height: 300px;
+		width: 557px;
+		/*height: 300px;*/
 	}
 
 }

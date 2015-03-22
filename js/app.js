@@ -29,6 +29,7 @@ $(function(){
 				}
 				$('#ERModal .slick').slick({
 					// mobileFirst: true
+					adaptiveHeight: true
 				});
 				$('#ERModal .slick div.slide').removeClass("hide");
 				slicked = true;
