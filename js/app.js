@@ -10,7 +10,7 @@ $(function(){
 		// console.log(modal);
 		switch($(modal.context).prop('id')){
 			case 'ERModal':
-				// $('#ERModal .slick div.slide').addClass('hide');
+				$('#ERModal .slick div.slide').addClass('hide');
 			break;
 		}
 	});
@@ -24,7 +24,7 @@ $(function(){
 			case 'ERModal':
 				console.log(2);
 				if(slicked){
-					// $('#ERModal .slick div.slide').addClass('hide');
+					$('#ERModal .slick div.slide').addClass('hide');
 					$('#ERModal .slick').slick('unslick');
 				}
 				$('#ERModal .slick').slick({
@@ -46,6 +46,7 @@ $(function(){
 				    }]
 				});
 				$('#ERModal .slick div.slide').removeClass("hide");
+				$('#ERModal video').css({width: '100%', border: '1px solid #ccc');
 				$('#ERModal .slick').slick("setPosition", 0);
 				slicked = true;
 				
