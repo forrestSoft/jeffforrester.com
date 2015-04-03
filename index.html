@@ -54,7 +54,8 @@
 						<a data-reveal-id="ERModal" >Employee Roster <span class="icon">↣</span></a>
 					</li>
 					<li>
-						<a href="/game5/index.html?showTutorial=true" target="_blank">Untitled Game <span class="icon">↣</span></a>
+						<!-- <a href="/game5/index.html?showTutorial=true" target="_blank">Untitled Game <span class="icon">↣</span></a> -->
+						<a data-reveal-id="gameModal" >Untitled Game <span class="icon">↣</span></a>
 						<em>(beta)</em>
 					</li>
 					</ul>
@@ -129,7 +130,7 @@
 							<li>Maintenance and enhancement of front end code base for all web properties</li>
 						</ul>
 
-						<span class="CTA-wrap">
+						<span class="CTA_wrap">
 							<a class="CTA right" href="https://cpg.org" target="_blank">see it ☞</a>
 						</span>
 					</div>
@@ -148,7 +149,7 @@
 					<ul>
 						<li>Javascript - with and without a framework</li>
 						<li>CSS3, SASS, Foundation/Bootstrap</li>
-						<li>Ruby, SQL, node, php</li>
+						<li>Ruby, SQL, node, php, git/svn</li>
 					</ul>
 				</div>
 				<div class="small-12 medium-4 columns">
@@ -180,6 +181,36 @@
 			</div>
 		</div>
 
+		<div id="gameModal" class="reveal-modal modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+			<div class="container">
+				<div class="row slide">
+					<div class="small-12 columns masthead">
+						<h2>Untitled Game <em>(beta)</em></h2>
+					
+						<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+					</div>
+					<div class="small-12 medium-8 medium-push-4 columns imageContainer">
+						<img src="images/banners/cpg.png">
+					</div>
+					<div class="small-12 medium-4 medium-pull-8 columns">
+						<p>This game is my implementation of a <a href="http://en.wikipedia.org/wiki/Nonogram">Nonogram</a> engine. </p>
+						<h5>Highlights:</h5>
+						<ul>
+							<li>Thick client game engine using backbone.js</li>
+							<li>UI layer powered by Foundation</li>
+							<li>Programmatic solver</li>
+							<li>Random (and therefore infinite) level generation </li>
+						</ul>
+						<p>Past the issues of UI and mechanics implementation, one of the more interesting challenges has been determining whether a randomly generated board is solvable. My approach has been to build an AI solver, capable of playing the game as I do. The algorythm understands many of the game play techniques used to iterate on the game state in an attempt to solve the puzzle.</p>
+
+						<span class="CTA_wrap">
+							<a class="CTA right" href="/game5/index.html?showTutorial=true" target="_blank">try it ☞</a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div id="ERModal" class="reveal-modal modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
 			<div class="container">
 				<div class="row">
@@ -204,26 +235,21 @@
 									<li>25,000 employee records captured</li>
 								</ul>
 								<span class="CTA_wrap">
-									<a class="CTA right nextSlide" >Watch the video ☞</a>
+									<a class="CTA right nextSlide">Watch the video ☞</a>
 								</span>
 							</div>
 						</div>
 					</div>
 					<div>
-						<div class="row slide hide">
+						<div class="row slide">
 							<div class="small-12 medium-8 medium-push-4 columns videoContainer">
 								<video controls poster="images/erPoster.png" src="EmployeeRosterFinal.mp4" type="video/mp4">
 
 								</video>
 							</div>
 							<div class="small-12 medium-4 medium-pull-8 columns">
-								<p>The Employee Roster application is the web self service portal used to capture demographic, compensation, and pension enrollment data for employees of Episcopal churches and institutions. It also serves as the interface to capture physical demographic information for all kinds of institutions</p>
-								<h5>Highlights:</h5>
-								<ul>
-									<li>Template-driven Backbone application</li>
-									<li>2,500 users</li>
-									<li>25,000 employee records captured</li>
-								</ul>
+								<h5>My role:</h5>
+								<p>I acted as the lead UI engineer, designing the application architecture to support a thick client model and enable easy to scale application consistency.</p>
 							</div>
 						</div>
 					</div>
