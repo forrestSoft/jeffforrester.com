@@ -162,7 +162,19 @@ body{
 	font-feature-settings: "liga", "dlig";
 }
 
+.cover{
+	filter: blur(8px);
+	-webkit-filter: blur(8px);
+}
 
+.cover.uncover{
+	filter: blur(0px);
+	-webkit-filter: blur(0px);
+	-webkit-transition: 1s -webkit-filter linear;
+	-moz-transition: 1s -moz-filter linear;
+	-o-transition: 1s -o-filter linear;
+	// transition: 1s -webkit-filter linear;
+}
 
 .loading{
 	justify-content: center;
