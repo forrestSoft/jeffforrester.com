@@ -267,8 +267,15 @@ ul.icon-bullets {
 	}
 }
 
-.main em {
-	color: $secondary-color;
+.main {
+	em {
+		color: $secondary-color;
+	}
+	
+	h2 {
+		font-family: $primary-font;
+		font-size: 1.1rem;
+	}
 }
 
 

@@ -10,6 +10,31 @@
 		<link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
 		<link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
 
+		<script type="text/javascript">
+			window.WebFontConfig = {
+				loading: function() {
+					console.log(1);
+				},
+				active: function() {
+					console.log(2);
+				},
+				inactive: function() {
+					console.log(6);
+				},
+				fontloading: function(familyName, fvd) {
+					console.log(3);
+				},
+				fontactive: function(familyName, fvd) {
+					console.log(4);
+				},
+				fontinactive: function(familyName, fvd) {
+					console.log(5);
+				},
+				classes:false,
+				events: true
+			};
+		</script>
+
 		<script type="text/javascript" src="js/webfontloader.js"></script>
 		<script src="js/modernizr.js"></script>
 
@@ -20,12 +45,14 @@
 
 		<script src="js/app.js"></script>
 
+		
 		<script type="text/javascript">
-			WebFont.load({
-				google: {
-					families: ['Open Sans', 'Droid Serif', 'Raleway', 'Lora']
-				}
-			
+			$(function(){
+				WebFont.load({
+					google: {
+						families: ['Open Sans', 'Droid Serif', 'Raleway', 'Lora']
+					}
+				});
 			});
 		</script>
 	</head>
@@ -44,7 +71,7 @@
 					
 					<p><a data-reveal-id="skillsModal" >Check out a quick summary of my skills <span class="icon">↣</span></a></p>
 					
-					<p>Some of my recent work:</p>
+					<h2>Some of my recent work:</h2>
 					<ul>
 					<li class="modalTrigger">
 						<a data-reveal-id="cpgModal" >Church Pension Group <span class="icon">↣</span></a>
