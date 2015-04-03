@@ -68,6 +68,9 @@
 $primary-color: lightsteelblue;
 $secondary-color: rgb(166, 168, 179);
 
+$CTA-primary-color: rgb(97, 147, 165);
+$CTA-secondary-color: #fff;
+
 $primary-font: 'Open Sans', sans-serif;
 $secondary-font: 'Droid Serif', sans-serif;
 
@@ -196,14 +199,21 @@ a:visited {
 	color: $primary-color;
 }
 
+.CTA_wrap{
+	display: inline-block;
+	padding: .5rem;
+	background: $CTA-primary-color;
+}
+
 a.CTA {
 	display: inline-block;
 	padding: .5rem 3rem;
-	background: #bad0e7;
-	border: 1px solid #473d3d;
-	text-align: right;
-	color: #473d3d;
+	background: $CTA-primary-color;
+	border: 1px dotted $CTA-secondary-color;
+	/*text-align: right;*/
+	color: $CTA-secondary-color;
 	font-family: $secondary-font;
+	text-transform: uppercase;
 }
 
 .no-break {
