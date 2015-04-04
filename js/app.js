@@ -50,4 +50,38 @@ $(function(){
 	$('.nextSlide').on('click', function(){
 		$('#ERModal .slick').slick('slickNext');
 	});
+
+	$(document.body).on('fonts:allLoaded', function(e){
+		console.log('fonts');
+		$('.main').addClass('uncover');
+		$('.loading').addClass('fadeOut');
+	});
+
+	WebFont.load({});
+
+	var images = [
+	'images/banners/cpg.png',
+	'images/banners/game.png',
+	'images/banners/er.png'
+];
+
+var current;
+var total = images.length + 1;
+var img;
+for (var i = 0; i < images.length; i++) {
+	img = $("<img />").attr("src", images[i]);
+	img.on('load', function(){
+		console.log('loaded', img);
+		current++;
+	});
+}
+
+var timeoutFunction = function(id){
+	console.log(window.timeoutID);
+	if (window.fontsLoaded === true){
+		$(document.body).trigger('fonts:allLoaded');
+		clearInterval(window.timeoutID);
+	}
+};
+window.timeoutID = window.setInterval(timeoutFunction, 1000, this);
 });

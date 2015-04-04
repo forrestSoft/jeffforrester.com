@@ -16,7 +16,9 @@
 					console.log(1);
 				},
 				active: function() {
-					console.log(2);
+					console.log(2, $(document.body));
+					$(document.body).trigger('fonts:allLoaded');
+					window.fontsLoaded = true;
 				},
 				inactive: function() {
 					console.log(6);

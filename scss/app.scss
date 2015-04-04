@@ -193,6 +193,14 @@ body{
 		align-items: center;
 		display: flex;
 	}
+
+	&.fadeOut{
+		opacity: 0;
+		// -webkit-filter: blur(0px);
+		-webkit-transition: 1s opacity linear;
+		-moz-transition: 1s opacity linear;
+		-o-transition: 1s opacity linear;
+	}
 }
 
 
