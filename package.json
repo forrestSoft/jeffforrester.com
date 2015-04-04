@@ -15,7 +15,7 @@
     "js/webfontloader.js",
     "js/modernizr.js",
     "js/jquery.min.js",
-    "js/foundation.min.js",
+    "js/foundation_light.min.js",
     "js/fastclick.js",
     "js/slick/slick.min.js",
     "js/app.js"
