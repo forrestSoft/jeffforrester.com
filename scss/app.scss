@@ -164,7 +164,6 @@ body{
 	-webkit-font-feature-settings: "liga", "dlig"; 
 	font-feature-settings: "liga", "dlig";
 }
-
 .cover{
 	@include filter(blur(8px));
 }
