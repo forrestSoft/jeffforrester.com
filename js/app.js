@@ -67,7 +67,10 @@ $(function(){
 	var images = [
 		'images/banners/cpg.png',
 		'images/banners/game.png',
-		'images/banners/er.png'
+		'images/banners/er.png',
+		'images/icons/email.png',
+		'images/icons/page_white_acrobat.png',
+		'images/icons/brick.png'
 	];
 
 	var current;
