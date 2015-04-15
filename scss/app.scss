@@ -325,9 +325,14 @@ ul.icon-bullets {
 		color: $secondary-color;
 	}
 
+	a em{
+		color: $CTA-primary-color;
+	}
+
 	h2 {
-		font-family: $primary-font;
-		font-size: 1.1rem;
+		font-family: $secondary-font;
+		font-size: 1rem;
+		font-style: italic;
 	}
 }
 
