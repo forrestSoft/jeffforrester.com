@@ -165,13 +165,13 @@ body{
 	font-feature-settings: "liga", "dlig";
 }
 .cover{
-	@include filter(blur(8px));
+	@include filter(blur(10px));
 }
 
 .cover.uncover{
 	@include filter(blur(0px));
 	@include transition-property(all);
-	@include transition-duration(1.25s);
+	@include transition-duration(1.35s);
 	@include transition-timing-function(ease-in-out);
 }
 
