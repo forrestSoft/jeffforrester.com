@@ -16,18 +16,6 @@
 					$(document.body).trigger('fonts:allLoaded');
 					window.fontsLoaded = true;
 				},
-				inactive: function() {
-					console.log(6);
-				},
-				fontloading: function(familyName, fvd) {
-					console.log(3);
-				},
-				fontactive: function(familyName, fvd) {
-					console.log(4);
-				},
-				fontinactive: function(familyName, fvd) {
-					console.log(5);
-				},
 				classes:false,
 				events: true,
 				google: {
@@ -51,6 +39,9 @@
 					
 					<h2>Some of my recent work:</h2>
 					<ul>
+						<li class="modalTrigger">
+							<a data-reveal-id="PublishingModal" >Church Publishing Inc. <span class="icon">↣</span></a>
+						</li>
 						<li class="modalTrigger">
 							<a data-reveal-id="cpgModal" >Church Pension Group <span class="icon">↣</span></a>
 							<em>(Current employer)</em>
@@ -123,15 +114,15 @@
 					<div class="small-12 medium-4 medium-pull-8 columns">
 						<p>I am the sole UI Engineer for the Church Pension Group, responsible for:</p>
 						<ul>
-							<li>Currently leading the UI effort to:
+							<!-- <li>Currently leading the UI effort to:
 								<ul>
 									<li>Pick an enterprise grade CMS</li>
 									<li>Replace all existing CMSs with a single solution</li>
 									<li>Design the business clients CMS user experience</li>
 									<li>Build and release new version of all web properties </li>
-								</ul>
-							<li>UX design and UI development of rich internet applications</li>
-							<li>Technical direction of all front end technologies</li>
+								</ul> -->
+							<li>UI engineering and UX design of rich internet applications</li>
+							<li>Technical leadership and direction of all front end technologies</li>
 							<li>Maintenance and enhancement of front end code base for all web properties</li>
 						</ul>
 					</div>
@@ -216,6 +207,34 @@
 
 						<span class="CTA_wrap">
 							<a class="CTA right" href="/game5/index.html?showTutorial=true" target="_blank">try it ☞</a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="PublishingModal" class="reveal-modal modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+			<div class="container">
+				<div class="row slide">
+					<div class="small-12 columns masthead">
+						<h2>Church Publishing Inc.</h2>
+					
+						<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+					</div>
+					<div class="small-12 medium-8 medium-push-4 columns imageContainer">
+						<img src="images/banners/publishing.jpg">
+					</div>
+					<div class="small-12 medium-4 medium-pull-8 columns">
+						<p>Rebuilt legacy website, using modern approaches.</p>
+						<h3>Highlights:</h3>
+						<ul>
+							<li>Mobile-first responsive design, using foundation</li>
+							<li>Built on EpiServer CMS (.net)</li>
+						</ul>
+						<p>For this project I lead the full stack implementation effort, and architected the front-end code base, designed the user experience.</p>
+
+						<span class="CTA_wrap">
+							<a class="CTA right" href="https://churchpublishing.org" target="_blank">See it ☞</a>
 						</span>
 					</div>
 				</div>
